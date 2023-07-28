@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Django App</h1>
+        <p>Puedes crear un entorno virtual (virtual environment) directamente desde Visual Studio Code utilizando la extensión "Python". Aquí tienes los pasos para hacerlo:
+    
+        Abre Visual Studio Code.
+    
+        Instala la extensión "Python" si aún no lo has hecho. Puedes encontrarla en la barra lateral izquierda de Visual Studio Code, en la sección de extensiones. Busca "Python" y haz clic en "Instalar".
+    
+        Abre la carpeta del proyecto en la que deseas crear el entorno virtual. Puedes seleccionar "Archivo" en la barra de menú de Visual Studio Code y luego "Abrir carpeta", o simplemente arrastra y suelta la carpeta en la ventana de Visual Studio Code.
+    
+        Una vez que la carpeta del proyecto esté abierta, haz clic en el ícono de la esquina inferior izquierda de Visual Studio Code para abrir el selector de entorno Python. Aparecerá una barra en la parte inferior de la ventana con el nombre de tu entorno de Python actual.
+    
+        Haz clic en el nombre del entorno de Python y selecciona "Create New Virtual Environment" (Crear un nuevo entorno virtual). Se te pedirá que elijas una ubicación para el entorno virtual y que le des un nombre.
+    
+        Después de seleccionar la ubicación y el nombre del entorno virtual, Visual Studio Code creará automáticamente el entorno virtual en la ubicación especificada.
+    
+        Una vez creado el entorno virtual, se activará automáticamente en Visual Studio Code. Verás el nombre del entorno virtual en la barra inferior de Visual Studio Code, indicando que estás trabajando dentro del entorno virtual.
+    
+        A partir de este punto, puedes utilizar las funcionalidades de Visual Studio Code para escribir y ejecutar tu código Python dentro del entorno virtual creado. También puedes instalar extensiones adicionales o paquetes específicos dentro del entorno virtual según sea necesario.
+        </p>
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/loguearse/">
+                Loguearse
+            </a>
+            <a class="btn btn-dark" href="/signup/">
+                Registrarse
+            </a>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
