@@ -2,17 +2,22 @@
 
 {% block content %}
 
-    <h1>Create Tasks</h1>
+    <main class="conteiner">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 mt-3">
+                <form action="/tasks/create/" method="post" class="card card-budy">
+                    <h1 class="text-center disply-1 py-1">Crear Tarea Nueva</h1>
 
-    <form action="/tasks/create/" method="post">
-
-        {% csrf_token %}
-        {{form.as_p}}  
-        
-        <button>
-            Save
-        </button>
-
-    </form>
+                    {% csrf_token %}
+                    {{form.as_p}}  
+                    
+                    <button class="btn btn-primary">
+                        Save
+                    </button>
+            
+                </form>
+            </div>
+        </div>
+    </main>
 
 {% endblock %}
